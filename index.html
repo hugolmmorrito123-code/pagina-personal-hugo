@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo | Mi Vida y Recuerdos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Iconos modernos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <nav class="navbar">
+            <a href="#inicio" class="logo">Hugo</a>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="modo" onclick="cambiarModo()" id="modo" aria-label="Cambiar tema">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <!-- SECCIÓN DE INICIO / HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="etiqueta-bienvenida">¡Bienvenidos a mi espacio! 👋</span>
+                <h1>Hola, soy <span>Hugo</span></h1>
+                <p class="subtitulo">Un recorrido por mi historia, mis momentos y mi esencia.</p>
+                <div class="hero-botones">
+                    <a href="#galeria" class="btn-principal">Ver Recuerdos</a>
+                    <a href="#contacto" class="btn-secundario">Contáctame</a>
+                </div>
+            </div>
+            <!-- FOTO 1 -->
+            <div class="hero-imagen">
+                <img src="HUGO1.jpeg" alt="Momento especial de aprendizaje">
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section id="sobre-mi" class="seccion">
+            <h2 class="titulo-seccion">Sobre Mí</h2>
+            <div class="tarjeta-sobre-mi">
+                <!-- FOTO 2 -->
+                <div class="imagen-secundaria">
+                    <img src="HUGO2.jpeg" alt="Experiencia de vida">
+                </div>
+                <div class="texto-sobre-mi">
+                    <p>
+                        Hola, mi nombre es <strong>Hugo</strong>. Tengo 20 años y actualmente curso mis estudios
+                        en el <strong>IESTP Manuel Scorza Torre</strong>.
+                    </p>
+                    <p>
+                        Me considero una persona responsable, respetuosa, perseverante y con muchas metas por cumplir.
+                        Disfruto aprender todos los días y valoro profundamente a las personas que me acompañan en este camino.
+                    </p>
+                    <div class="info-detalles">
+                        <span><i class="fa-solid fa-location-dot"></i> Perú</span>
+                        <span><i class="fa-solid fa-heart"></i> Constancia y Esfuerzo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="seccion">
+            <h2 class="titulo-seccion">Lo que me define</h2>
+            <div class="grid-habilidades">
+                <div class="card-habilidad"><i class="fa-solid fa-handshake"></i><span>Respeto</span></div>
+                <div class="card-habilidad"><i class="fa-solid fa-seedling"></i><span>Perseverancia</span></div>
+                <div class="card-habilidad"><i class="fa-solid fa-users"></i><span>Compañerismo</span></div>
+                <div class="card-habilidad"><i class="fa-solid fa-book-open"></i><span>Ganas de aprender</span></div>
+                <div class="card-habilidad"><i class="fa-solid fa-bullseye"></i><span>Dedicación</span></div>
+                <div class="card-habilidad"><i class="fa-solid fa-star"></i><span>Lealtad</span></div>
+            </div>
+        </section>
+
+        <!-- MI GALERÍA DE RECUERDOS -->
+        <section id="galeria" class="seccion">
+            <h2 class="titulo-seccion">Mi Galería de Recuerdos</h2>
+            <div class="grid-galeria">
+
+                <!-- RECUERDO 1 -->
+                <div class="card-galeria">
+                    <div class="galeria-img">
+                        <img src="HUGO3.png" alt="Instantes de concentración y enfoque">
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Constancia Diaria</h3>
+                        <p>“Cada paso, por pequeño que parezca, me acerca un poco más a la persona que quiero llegar a ser.”</p>
+                    </div>
+                </div>
+
+                <!-- RECUERDO 2 -->
+                <div class="card-galeria">
+                    <div class="galeria-img">
+                        <img src="HUGO4.jpg" alt="Momentos compartidos en equipo">
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Valiosas Compañías</h3>
+                        <p>“Los mejores momentos de la vida se forman al compartir risas, esfuerzo y grandes vivencias con los demás.”</p>
+                    </div>
+                </div>
+
+                <!-- RECUERDO 3 -->
+                <div class="card-galeria">
+                    <div class="galeria-img">
+                        <img src="HUGO5.png" alt="Vivencias al aire libre">
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Nuevos Horizontes</h3>
+                        <p>“Explorando el mundo exterior con la mente abierta y el corazón dispuesto a superar cualquier reto.”</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="seccion">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <div class="tarjeta-contacto">
+                <p>¿Quieres enviarme un mensaje o compartir un saludo? ¡Me encantará leerte!</p>
+                <div class="datos-contacto">
+                    <p><strong><i class="fa-solid fa-envelope"></i> Correo:</strong> hg@tudominio.com</p>
+                    <p><strong><i class="fa-solid fa-globe"></i> Ubicación:</strong> Perú</p>
+                </div>
+                <button onclick="saludar()" class="btn-saludo">Enviar Saludo</button>
+                <p id="mensaje"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Hugo. Historias y recuerdos que dejan huella.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
